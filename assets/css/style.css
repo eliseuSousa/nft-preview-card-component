@@ -5,43 +5,67 @@ main {
   justify-content: center;
 }
 
-section.card {
+div.container-superior {
+  background: blue;
+  width: 413px;
+  height: 647px;
+  padding: 32px;
+  margin: 70px;
+  position: relative;
+  border-radius: 12px;
+}
+
+div.container-inferior {
+  background: red;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 32px;
+  width: 381px;
+  height: 610px;
+  position: relative;
+  left: -12px;
+}
+
+div.card {
   align-items: center;
   background-color: var(--very-dark-blue-card-bg);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   padding: 24px;
-  margin: 100px 0;
+  position: absolute;
+  left: 22px;
+  top: -22px;
 }
 
-section.card div.image {
+div.card div.image {
   border-radius: 8px;
   height: 294px;
   overflow: hidden;
   width: 294px;
 }
 
-section.card div.image img {
+div.card div.image img {
   width: 100%;
 }
 
 
-section.card div.descricao h1.titulo {
+div.card div.descricao h1.titulo {
   color: var(--white);
   font-size: 2.2rem;
   font-weight: 600;
   padding: 3.2rem 0 1.6rem 0;
 } 
 
-section.card div.descricao p.resumo{
+div.card div.descricao p.resumo{
   color: var(--soft-blue);
   font-size: 1.8rem;
   font-weight: 300;
   padding: .8rem 0;
 }
 
-section.card div.descricao div.detalhes {
+div.card div.descricao div.detalhes {
   padding: 1.6rem 0;
   display: flex;
   align-items: center;
@@ -49,56 +73,56 @@ section.card div.descricao div.detalhes {
   border-bottom: 0.3px solid var(--soft-blue);
 }
 
-section.card div.descricao div.detalhes div.preco {
+div.card div.descricao div.detalhes div.preco {
   display: flex;
   align-items: center;
 }
 
-section.card div.descricao div.detalhes div.preco p {
+div.card div.descricao div.detalhes div.preco p {
   color: var(--cyan);
   font-size: 1.6rem;
   font-weight: 600;
   margin-left: 0.8rem;
 }
 
-section.card div.descricao div.detalhes div.dias-restantes{
+div.card div.descricao div.detalhes div.dias-restantes{
   display: flex;
   align-items: center;
 }
 
-section.card div.descricao div.detalhes div.dias-restantes p {
+div.card div.descricao div.detalhes div.dias-restantes p {
   color: var(--soft-blue);
   font-size: 1.6rem;
   font-weight: 300;
   margin-left: 0.8rem;
 }
 
-section.card div.footer {
+div.card div.footer {
   align-items: center;
   display: flex;
   align-self:flex-start;  
   padding: 1.6rem 0;
 }
 
-section.card div.footer div.avatar{
+div.card div.footer div.avatar{
   width: 46px;
   height: 46px;
   margin-right: 1.6rem;
 }
 
-section.card div.footer div.avatar img {
+div.card div.footer div.avatar img {
   width: 100%;
   border-radius: 50%;
   border: 2px solid var(--white);
 }
 
-section.card div.footer p.creditos {
+div.card div.footer p.creditos {
   color: var(--white);
   font-size: 1.6rem;
   font-weight: 400;
 }
 
-section.card div.footer p.creditos span {
+div.card div.footer p.creditos span {
   color: var(--soft-blue);
   font-size: 1.6rem;
   font-weight: 300;

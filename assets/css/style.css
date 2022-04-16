@@ -26,15 +26,12 @@ section.card div.image img {
   width: 100%;
 }
 
-section.card div.descricao {
-  margin: 1.6rem;
-}
 
 section.card div.descricao h1.titulo {
   color: var(--white);
   font-size: 2.2rem;
   font-weight: 600;
-  padding-bottom: 0.8rem;
+  padding: 3.2rem 0 1.6rem 0;
 } 
 
 section.card div.descricao p.resumo{
@@ -45,10 +42,11 @@ section.card div.descricao p.resumo{
 }
 
 section.card div.descricao div.detalhes {
-  padding: 0.8rem 0;
+  padding: 1.6rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 0.3px solid var(--soft-blue);
 }
 
 section.card div.descricao div.detalhes div.preco {
@@ -56,7 +54,52 @@ section.card div.descricao div.detalhes div.preco {
   align-items: center;
 }
 
+section.card div.descricao div.detalhes div.preco p {
+  color: var(--cyan);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 0.8rem;
+}
+
 section.card div.descricao div.detalhes div.dias-restantes{
   display: flex;
   align-items: center;
+}
+
+section.card div.descricao div.detalhes div.dias-restantes p {
+  color: var(--soft-blue);
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-left: 0.8rem;
+}
+
+section.card div.footer {
+  align-items: center;
+  display: flex;
+  align-self:flex-start;  
+  padding: 1.6rem 0;
+}
+
+section.card div.footer div.avatar{
+  width: 46px;
+  height: 46px;
+  margin-right: 1.6rem;
+}
+
+section.card div.footer div.avatar img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+section.card div.footer p.creditos {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.card div.footer p.creditos span {
+  color: var(--soft-blue);
+  font-size: 1.6rem;
+  font-weight: 300;
 }

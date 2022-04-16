@@ -6,17 +6,17 @@ main {
 }
 
 div.container-superior {
-  background: blue;
-  width: 413px;
-  height: 647px;
+  background: hsl(217deg 49% 8% / 24%);
+  width: 420px;
+  height: 667px;
   padding: 32px;
   margin: 70px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 div.container-inferior {
-  background: red;
+  background: hsl(217deg 49% 8% / 60%);
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;

@@ -39,24 +39,49 @@ div.card {
   top: -22px;
 }
 
+div.card div.active-state {
+  align-items: center;
+  background-color: var(--cyan);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  height: 294px;
+  opacity: 0.5;
+  position: relative;
+  width: 294px;
+}
+
 div.card div.image {
   border-radius: 8px;
   height: 294px;
   overflow: hidden;
   width: 294px;
+  position: absolute;
+  transition: all 0.3s;
 }
+
+div.card div.image:hover {
+  opacity: 0.3;
+  cursor:pointer;
+}
+
 
 div.card div.image img {
   width: 100%;
 }
-
 
 div.card div.descricao h1.titulo {
   color: var(--white);
   font-size: 2.2rem;
   font-weight: 600;
   padding: 3.2rem 0 1.6rem 0;
-} 
+  transition: all 0.3s;
+}
+
+div.card div.descricao h1.titulo:hover, div.card div.footer p.creditos:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
 
 div.card div.descricao p.resumo{
   color: var(--soft-blue);

@@ -5,150 +5,157 @@ main {
   justify-content: center;
 }
 
-div.container-superior {
-  background: hsl(217deg 49% 8% / 24%);
-  width: 420px;
-  height: 667px;
-  padding: 32px;
-  margin: 70px;
-  position: relative;
-  border-radius: 16px;
-}
+  div.container-superior {
+    background: hsl(217deg 49% 8% / 24%);
+    width: 420px;
+    height: 667px;
+    padding: 32px;
+    margin: 70px;
+    position: relative;
+    border-radius: 16px;
+  }
 
-div.container-inferior {
-  background: hsl(217deg 49% 8% / 60%);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  border-radius: 32px;
-  width: 381px;
-  height: 610px;
-  position: relative;
-  left: -12px;
-}
+  div.container-inferior {
+    background: hsl(217deg 49% 8% / 60%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 32px;
+    width: 381px;
+    height: 610px;
+    position: relative;
+    left: -12px;
+  }
 
-div.card {
-  align-items: center;
-  background-color: var(--very-dark-blue-card-bg);
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  position: absolute;
-  left: 22px;
-  top: -22px;
-}
+  div.card {
+    align-items: center;
+    background-color: var(--very-dark-blue-card-bg);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    position: absolute;
+    left: 22px;
+    top: -22px;
+  }
 
-div.card div.active-state {
-  align-items: center;
-  background-color: var(--cyan);
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  height: 294px;
-  opacity: 0.5;
-  position: relative;
-  width: 294px;
-}
+    div.active-state {
+      background-color: var(--cyan);
+      border-radius: 8px;
+      height: 294px;
+      opacity: 0.5;
+      position: relative;
+      width: 294px;
+    }
 
-div.card div.image {
-  border-radius: 8px;
-  height: 294px;
-  overflow: hidden;
-  width: 294px;
-  position: absolute;
-  transition: all 0.3s;
-}
+      img.view {
+        position: absolute;
+        top: 24%;
+        opacity: 0;
+        transition: all 0.3s;
+      }
 
-div.card div.image:hover {
-  opacity: 0.3;
-  cursor:pointer;
-}
+      div.image:hover ~ img.view {
+        opacity: 1;
+      }
 
+      div.image {
+        border-radius: 8px;
+        height: 294px;
+        overflow: hidden;
+        width: 294px;
+        position: absolute;
+        transition: all 0.3s;
+      }
 
-div.card div.image img {
-  width: 100%;
-}
+      div.image:hover {
+        opacity: 0.3;
+        cursor:pointer;
+      }
 
-div.card div.descricao h1.titulo {
-  color: var(--white);
-  font-size: 2.2rem;
-  font-weight: 600;
-  padding: 3.2rem 0 1.6rem 0;
-  transition: all 0.3s;
-}
+      div.image img {
+        width: 100%;
+      }
 
-div.card div.descricao h1.titulo:hover, div.card div.footer p.creditos:hover {
-  color: var(--cyan);
-  cursor: pointer;
-}
+    div.descricao h1.titulo {
+      color: var(--white);
+      font-size: 2.2rem;
+      font-weight: 600;
+      padding: 3.2rem 0 1.6rem 0;
+      transition: all 0.3s;
+    }
 
-div.card div.descricao p.resumo{
-  color: var(--soft-blue);
-  font-size: 1.8rem;
-  font-weight: 300;
-  padding: .8rem 0;
-}
+    div.descricao h1.titulo:hover, div.footer p.creditos:hover {
+      color: var(--cyan);
+      cursor: pointer;
+    }
 
-div.card div.descricao div.detalhes {
-  padding: 1.6rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.3px solid var(--soft-blue);
-}
+    div.descricao p.resumo{
+      color: var(--soft-blue);
+      font-size: 1.8rem;
+      font-weight: 300;
+      padding: .8rem 0;
+    }
 
-div.card div.descricao div.detalhes div.preco {
-  display: flex;
-  align-items: center;
-}
+    div.descricao div.detalhes {
+      padding: 1.6rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.3px solid var(--soft-blue);
+    }
 
-div.card div.descricao div.detalhes div.preco p {
-  color: var(--cyan);
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-left: 0.8rem;
-}
+      div.preco {
+        display: flex;
+        align-items: center;
+      }
 
-div.card div.descricao div.detalhes div.dias-restantes{
-  display: flex;
-  align-items: center;
-}
+      div.preco p {
+        color: var(--cyan);
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-left: 0.8rem;
+      }
 
-div.card div.descricao div.detalhes div.dias-restantes p {
-  color: var(--soft-blue);
-  font-size: 1.6rem;
-  font-weight: 300;
-  margin-left: 0.8rem;
-}
+      div.dias-restantes{
+        display: flex;
+        align-items: center;
+      }
 
-div.card div.footer {
-  align-items: center;
-  display: flex;
-  align-self:flex-start;  
-  padding: 1.6rem 0;
-}
+      div.dias-restantes p {
+        color: var(--soft-blue);
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-left: 0.8rem;
+      }
 
-div.card div.footer div.avatar{
-  width: 46px;
-  height: 46px;
-  margin-right: 1.6rem;
-}
+    div.footer {
+      align-items: center;
+      display: flex;
+      align-self:flex-start;  
+      padding: 1.6rem 0;
+    }
 
-div.card div.footer div.avatar img {
-  width: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--white);
-}
+      div.avatar{
+        width: 46px;
+        height: 46px;
+        margin-right: 1.6rem;
+      }
 
-div.card div.footer p.creditos {
-  color: var(--white);
-  font-size: 1.6rem;
-  font-weight: 400;
-}
+      div.avatar img {
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid var(--white);
+      }
 
-div.card div.footer p.creditos span {
-  color: var(--soft-blue);
-  font-size: 1.6rem;
-  font-weight: 300;
-}
+      p.creditos {
+        color: var(--white);
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+        p.creditos span {
+          color: var(--soft-blue);
+          font-size: 1.6rem;
+          font-weight: 300;
+        }

@@ -18,15 +18,13 @@ Essa é a solução para o [NFT preview card component challenge on Frontend Men
 
 ### Challenge
 
-O desafio é construir o aplicativo de calculadora de gorjetas e fazê-lo parecer o mais próximo possível do design.
+O objetivo é construir este componente de cartão de visualização e fazê-lo parecer o mais próximo possível do design.
 
 Seus usuários devem ser capazes de:
 
 * Visualize o layout ideal para o aplicativo, dependendo do tamanho da tela do dispositivo
 
 * Veja os estados de foco para todos os elementos interativos na página
-
-* Calcule a gorjeta correta e o custo total da conta por pessoa
 
 ### Screenshot
 
